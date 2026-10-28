@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1 - Registrasi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/latihan1.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Form Registrasi Mahasiswa</h1>
+    </header>
+
+    <main class="container">
+        <a href="index.html" class="back-link">← Kembali ke Homepage</a>
+
+        <section class="panel">
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="nama">Nama Mahasiswa</label>
+                    <input
+                        id="nama"
+                        type="text"
+                        placeholder="Ketik nama mahasiswa"
+                        autocomplete="off"
+                        required
+                    >
+                    <div id="suggestions" class="suggestions"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="nim">NIM</label>
+                    <input
+                        id="nim"
+                        type="text"
+                        placeholder="Masukkan NIM"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="matkul">Mata Kuliah</label>
+                    <select id="matkul" required>
+                        <option value="">Pilih mata kuliah</option>
+                        <option value="Dasar Pemrograman">Dasar Pemrograman</option>
+                        <option value="Jaringan Komputer">Jaringan Komputer</option>
+                        <option value="Kalkulus 2">Kalkulus 2</option>
+                        <option value="Matematika Diskrit">Matematika Diskrit</option>
+                        <option value="Sistem Operasi">Sistem Operasi</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="dosen">Dosen</label>
+                    <select id="dosen" required>
+                        <option value="">Pilih dosen</option>
+                        <option value="Dr. Yudhi Purwananto, S.Kom., M.Kom.">
+                            Dr. Yudhi Purwananto, S.Kom., M.Kom.
+                        </option>
+                        <option value="Royyana Muslim Ijtihadie, S.Kom., M.Kom., Ph.D.">
+                            Royyana Muslim Ijtihadie, S.Kom., M.Kom., Ph.D.
+                        </option>
+                        <option value="Drs. Sentot Didik Surjanto, M.Si">
+                            Drs. Sentot Didik Surjanto, M.Si
+                        </option>
+                        <option value="Ilham Gurat Adillion, S.Kom., M.Eng.">
+                            Ilham Gurat Adillion, S.Kom., M.Eng.
+                        </option>
+                        <option value="Prof. Ir. Tohari Ahmad, S.Kom., M.IT., Ph.D.">
+                            Prof. Ir. Tohari Ahmad, S.Kom., M.IT., Ph.D.
+                        </option>
+                    </select>
+                </div>
+
+                <button type="submit">Daftar</button>
+                <button type="reset">Reset</button>
+            </form>
+
+            <div id="hasilRegistrasi" class="result" hidden></div>
+        </section>
+    </main>
+</body>
+</html>

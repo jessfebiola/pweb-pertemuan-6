@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Latihan 2 - Pencarian Kode Pos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/latihan2.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Pencarian Kode Pos Indonesia</h1>
+        <p>Temukan kode pos berdasarkan wilayah</p>
+    </header>
+
+    <main class="container">
+        <a href="index.html" class="back-link">
+            &larr; Kembali ke Homepage
+        </a>
+
+        <section class="panel">
+            <h2>Cari Kode Pos</h2>
+            <p>Pilih provinsi, kabupaten/kota, dan kecamatan.</p>
+
+            <form id="formKodePos">
+
+                <div class="form-group">
+                    <label for="provinsi">Provinsi</label>
+                    <select id="provinsi" required>
+                        <option value="">Pilih provinsi</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="kota">Kabupaten/Kota</label>
+                    <select id="kota" required disabled>
+                        <option value="">Pilih kabupaten/kota</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="kecamatan">Kecamatan</label>
+                    <select id="kecamatan" required disabled>
+                        <option value="">Pilih kecamatan</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Cari Kode Pos</button>
+                    <button type="reset" class="btn-reset">Reset</button>
+                </div>
+
+            </form>
+
+            <div id="hasilKodePos" class="result" hidden></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Latihan HTML, CSS, dan JavaScript</p>
+    </footer>
+
+</body>
+</html>
